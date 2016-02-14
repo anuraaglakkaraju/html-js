@@ -1,0 +1,88 @@
+<html>
+<h> This is The Simple Game created by Anuraag Lakkaraju </h>
+<body>
+	
+	<script langauge = "JavaScript">
+	// Check if the user is ready to play!
+	function start1()
+	{var count = 0
+		if (count === 0)
+		{document.write("Introduction:")
+			document.write("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'")}
+	document.write("Suddenly, Bieber stops and says, 'Who wants to race me?'")
+		var userAnswer = prompt("Do you want to race Bieber on stage?")
+	if (userAnswer === "yes")
+	{ document.write("You and Bieber start racing. It's neck and neck! You win by a shoelace!")
+	}
+	else if (userAnswer === 'no')
+	{ document.write("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'")
+	}
+	else 
+	{ start1()
+		var count = count + 1
+	}}
+	
+    function game()
+	{var con = confirm("Ready to play?")
+
+
+	if (con === true)
+	{var age= prompt("What is your age?")
+	if (age < 12)
+	{ document.write("Sorry, you must be 12 or above to play this game")
+	}
+	else if (age == false)
+		
+	else
+	{ alert("Let's begin!")
+	  start1()
+		
+	}}
+	else
+	{var con1 = confirm("Are you sure?")
+	if (con1 === true)
+	{document.write("Come back soon")
+	}
+	else
+	{  game()
+	}
+	}
+	} 
+	
+	</script>
+</br>
+</br>
+</br>
+	<input type="button" name="Begin game" value="The Simple Game" onClick="game();">
+	<!-- <input type="button" name="Start game" value="Start game" onClick="start1();">
+</body> -->
+</html>
+	
+	
+<!--	<html>
+	<body>
+		<script langauge = "JavaScript">
+		function game()
+		{var con = confirm("Ready to play?")
+
+
+		if (con === true)
+		{var age= prompt("What is your age?")
+		if (age < 12)
+		{ document.write("Sorry, you must be 12 and above to play this game")
+		}
+		else
+		{ document.write("Let's begin!")
+		}}
+		else
+		{var con1 = confirm("Are you sure?")
+		while (con1 === false)
+	    {var repeat = "game()"
+		}
+		document.write("Come back soon")
+		}}
+		</script>
+		<input type="button" name="The simple game" value"The Simple Game" onClick="game();">
+	</body>
+	</html> -->
+	
